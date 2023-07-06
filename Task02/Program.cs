@@ -9,19 +9,26 @@ int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 int number2 = Convert.ToInt32(Console.ReadLine());
 int max = number1;
-int min;
+int min = number2;
 
-
-if (number1 > number2)
+if (number1 == number2)
 {
-    max = number1;
-    min = number2;
+    Console.WriteLine("Числа одинаковые");
 }
 else
 {
-    max = number2;
-    min = number1;
-}
+    if (number1 > number2)
+    {
+        max = number1;
+        min = number2;
+    }
+    else
+    {
+        max = number2;
+        min = number1;
+    }
 
-Console.WriteLine($"Число {max} больше чем {min}");
+    Console.WriteLine($"Число {max} больше чем {min}");
+
+}
 

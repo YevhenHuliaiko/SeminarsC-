@@ -14,7 +14,7 @@ void TableSquare(int num) //void потому что возвращать нич
     int count = 1;
     while (count <= num)
     {
-        Console.WriteLine($"{count}  {count * count}");
+        Console.WriteLine($"{count} -> {count * count}");
         count++;
     }
 }

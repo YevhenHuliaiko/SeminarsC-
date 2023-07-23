@@ -7,6 +7,7 @@ PrintArray(array);
 
 Console.WriteLine("New array:");
 int[] newArray = CopyArray(array);
+//newArray[0] = 777;
 PrintArray(newArray);
 
 int[] CreateArrayRndInt(int size, int min, int max) // Это называется сигнатура метода 
